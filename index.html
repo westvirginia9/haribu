@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dari Firda</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="backgroundMusic" src="lagu/lagu.mp3" loop autoplay></audio>
+
+</head>
+<body>
+    <div class="container">
+        <section class="page" id="page1">
+            <h1>Halo Mamah</h1>
+            <button class="next-button" data-target="#page2">Lanjut</button>
+        </section>
+
+        <section class="page hidden" id="page2">
+            <div id="typingContainer">
+                <p id="typedMessage"></p>
+            </div>
+            <button class="next-button" data-target="#page3">Lanjut</button>
+        </section>
+
+        <section class="page hidden" id="page3">
+            <div id="slideshow">
+                <div id="slides">
+                    <img src="images/1.jpg" alt="Photo 1">
+                    <img src="images/2.jpg" alt="Photo 2">
+                    <img src="images/3.jpg" alt="Photo 3">
+                    <img src="images/4.jpg" alt="Photo 3">
+                </div>
+            </div>
+            <button class="next-button" data-target="#page4">Lanjut</button>
+        </section>
+
+        <section class="page hidden" id="page4">
+            <div id="gift">
+                <p>🎁 Pencet untuk membuka 🎁</p>
+            </div>
+            <div id="certificate" class="hidden">
+                <img src="images/certificate.png" alt="Certificate">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
